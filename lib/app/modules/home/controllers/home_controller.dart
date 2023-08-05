@@ -1,7 +1,8 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class HomeController extends GetxController {
-  var Height = 160.obs;
+  var Height = 170.obs;
   var weight = 50.obs;
   var age = 24.obs;
   var genderM = false.obs;
@@ -22,7 +23,7 @@ class HomeController extends GetxController {
     super.onClose();
   }
 
-  void changslide(value) => Height.value = value;
+  void changslide(value) => Height.value = value.toInt();
   void add(target) {
     target.value++;
   }
@@ -47,16 +48,24 @@ class HomeController extends GetxController {
     }
 
     double bmi = weight.value / ((Height.value / 100) * (Height.value / 100));
+    var mmi = bmi.toString().length > 5
+        ? bmi.toString().substring(0, 5)
+        : bmi.toString();
     var result;
+    var coul;
     if (bmi < 18.5) {
       result = "Underweight";
+      coul = Colors.red;
     } else if (bmi > 18.5 && bmi < 24.9) {
       result = "Normal weight";
+      coul = Colors.green;
     } else if (bmi > 25.0 && bmi < 29.9) {
       result = "Pre-Obesity";
+      coul = Colors.orange;
     } else if (bmi > 30.0) {
       result = "Obesity";
+      coul = Colors.red;
     }
-    return [result, bmi, ideal];
+    return [result, mmi, ideal, coul];
   }
 }

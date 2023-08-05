@@ -36,7 +36,7 @@ class HeightCard extends StatelessWidget {
               ],
             )),
             Slider(
-              value: Height.value,
+              value: Height.value.toDouble(),
               max: 200,
               divisions: 200,
               activeColor: Pallete.Apptheme2,

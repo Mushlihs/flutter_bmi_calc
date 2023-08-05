@@ -1,7 +1,6 @@
 import 'package:get/get.dart';
 
 class ResultController extends GetxController {
-  //TODO: Implement ResultController
   final arg = Get.arguments;
 
   final count = 0.obs;

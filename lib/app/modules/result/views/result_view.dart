@@ -27,12 +27,12 @@ class ResultView extends GetView<ResultController> {
             Text(
               controller.arg[0].toString(),
               style: Tstyle.Main.copyWith(
-                  fontSize: 28.sp, color: Pallete.Apptheme2),
+                  fontSize: 28.sp, color: controller.arg[3]),
             ),
             Text(
-              " BMI Index : ${controller.arg[1].toString().length > 5 ? controller.arg[1].toString().substring(0, 5) : controller.arg[1].toString()}",
+              "${controller.arg[1]}",
               style: Tstyle.Main.copyWith(
-                  fontSize: 48.sp, color: Pallete.AppLight),
+                  fontSize: 98.sp, color: Pallete.AppLight),
             ),
             Text(
               " Ideal Weight : ${controller.arg[2].toString()}Kg",

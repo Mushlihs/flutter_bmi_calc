@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 class Pallete {
   static final AppLight = Colors.white;
   static final Appdark = Colors.black;
-  static final Apptheme1 = Color.fromRGBO(38, 11, 98, 1);
+  static final Apptheme1 = Color.fromRGBO(31, 1, 62, 1);
   static final Apptheme2 = Colors.red[400];
 }
 

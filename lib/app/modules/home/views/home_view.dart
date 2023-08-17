@@ -25,7 +25,7 @@ class HomeView extends GetView<HomeController> {
           centerTitle: true,
         ),
         bottomNavigationBar: BottomCount(
-          text: "Hitung",
+          text: "Calculate",
           Callback: () {
             if (controller.genderF.value == false &&
                 controller.genderM.value == false) {

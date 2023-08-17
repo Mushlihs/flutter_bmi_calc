@@ -2,7 +2,7 @@
 
 
 ## Getting Started
-![Preview Image](preview.jpg)
+![Preview Image](preview.png)
 This project is a starting point for a Flutter application.
 im currently using getx Statemanagement for this apps
 
